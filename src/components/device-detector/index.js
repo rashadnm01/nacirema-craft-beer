@@ -1,10 +1,7 @@
-import "./App.scss";
-import { Container } from "react-bootstrap";
-import { Route, Routes } from "react-router-dom";
-import { MobileHome } from "./components/mobile/mobile-home";
+// NOT CURRENTLY IN USE
 import { useState, useEffect } from "react";
 
-function App() {
+const DeviceDetector = () => {
   const [deviceType, setDeviceType] = useState("");
 
   useEffect(() => {
@@ -34,16 +31,7 @@ function App() {
     }
   }, []);
 
-  return (
-    <Container>
-      <Routes>
-        <Route
-          path="/"
-          element={deviceType === "Mobile" ? <MobileHome /> : ""}
-        />
-      </Routes>
-    </Container>
-  );
-}
+  return <div>I am rendered on: {deviceType}</div>;
+};
 
-export default App;
+export default DeviceDetector;

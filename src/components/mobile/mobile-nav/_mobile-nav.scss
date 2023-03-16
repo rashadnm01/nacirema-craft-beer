@@ -1,0 +1,49 @@
+.nav {
+  background: #c08800;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  .nav-title {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    #text-logo {
+      width: 90%;
+    }
+  }
+  .nav-items {
+    width: 50%;
+    display: flex;
+    padding: 0.5rem;
+    .nav-item {
+    }
+    .nav-search {
+      height: 100%;
+      width: 70%;
+      background: rgba(217, 217, 217, 0.23);
+      display: flex;
+      align-items: center;
+      padding: 0.5rem;
+
+      font-family: "Quicksand";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18.5263px;
+      line-height: 23px;
+      color: rgba(28, 12, 1, 0.32);
+
+      #search-icon {
+      }
+    }
+    .nav-hamburger-menu {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      #hamburger-icon {
+        height: 60%;
+      }
+    }
+  }
+}
